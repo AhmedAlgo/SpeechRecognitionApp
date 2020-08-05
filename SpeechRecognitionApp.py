@@ -53,7 +53,7 @@ def responed(voice_data): # a function with the possible responses, obviously yo
     
 
 
-def Areny_speaks(audio_string): # a function that gets a string a make an audio file
+def Areny_speaks(audio_string): # a function that gets a string and make an audio file
     tts = gTTS(text=audio_string, lang='en') # texts to speech
     r= random.randint(1, 1000) # generate a number for the audio file
     audio_file= 'audio-' + str(r) +'.mp3' # make audio file as mp3
